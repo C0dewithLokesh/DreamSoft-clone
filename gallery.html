@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Gallery</title>
+    <!-- font awessome css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animation cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+  <body>
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li class="mobile-only">
+          <a href="index.html" class="active">Home</a>
+        </li>
+        <li class="mobile-only"><a href="about.html">About Us</a></li>
+        <li class="mobile-only"><a href="gallery.html">Gallery</a></li>
+        <li class="mobile-only"><a href="pricing.html">Pricing</a></li>
+        <li class="mobile-only"><a href="#">Blog</a></li>
+        <li class="mobile-only"><a href="#">Contact Us</a></li>
+        <li class="mobile-only"><a href="searchPage.html">Pages</a></li>
+      </ul>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./assets/logo.png" alt="dreamSoft" />
+        </a>
+      </div>
+      <nav class="desktop-main-menu">
+        <ul>
+          <li class="open-search">
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li class="open-search"><a href="about.html">About Us</a></li>
+          <li class="open-search"><a href="gallery.html">Gallery</a></li>
+          <li class="open-search"><a href="pricing.html">Pricing</a></li>
+          <li class="open-search"><a href="#">Blog</a></li>
+          <li class="open-search"><a href="#">Contact Us</a></li>
+          <li class="open-search"><a href="searchPage.html">Pages</a></li>
+          <li class="show-search" id="show-search">
+            <form>
+              <input class="form-input" type="text" placeholder="search..." />
+            </form>
+          </li>
+          <li class="search nav-icon" id="search-icon">
+            <i class="fa fa-light fa-search"></i>
+          </li>
+          <li class="share nav-icon" id="shareBtn">
+            <i class="fa fa-share-alt"></i>
+            <ul class="share-icons" id="share-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-google"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- section-a -->
+    <section class="about-a">
+      <div class="a-container">
+        <div class="container">
+          <h1>Grid Gallery</h1>
+          <ul>
+            <li><a href="index.html">Home</a>/</li>
+            <li><a href="gallery.html">Gallery</a>/</li>
+            <li class="active">Grid Gallery</li>
+          </ul>
+        </div>
+        <div class="a-img"></div>
+      </div>
+    </section>
+
+    <!-- section-c  -->
+    <section class="section-c">
+      <div class="container filter-projects">
+        <ul>
+          <li>
+            <a href="#" class="active" data-filter="all">ALL</a>
+          </li>
+          <li>
+            <a href="#" data-filter="mobile">MOBILE APPS</a>
+          </li>
+          <li>
+            <a href="#" data-filter="custom">CUSTOM SOFTWARE</a>
+          </li>
+          <li>
+            <a href="#" data-filter="qa">QA & TESTING</a>
+          </li>
+          <li>
+            <a href="#" data-filter="ux">UX AND DESIGN</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container projects-list">
+        <ul>
+          <li class="qa">
+            <div class="overlay">
+              <img src="./assets/1.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="mobile">
+            <div class="overlay">
+              <img src="./assets/mobile-1.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="custom">
+            <div class="overlay">
+              <img src="./assets/custom-1.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="qa">
+            <div class="overlay">
+              <img src="./assets/qa-2.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="ux">
+            <div class="overlay">
+              <img src="./assets/ux-1.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="mobile">
+            <div class="overlay">
+              <img src="./assets/mobile-2.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="custom">
+            <div class="overlay">
+              <img src="./assets/custom-2.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+
+          <li class="qa">
+            <div class="overlay">
+              <img src="./assets/qa-3.jpg" alt="${title}" />
+              <div class="overlay-bg"></div>
+            </div>
+
+            <div class="caption">
+              <h5>ISTATS</h5>
+              <p>2017, iOS Development Services</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="btn-wrap">
+          <div class="btn load-btn">
+            <div class="hover"></div>
+            <a href="#">Load More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="content-left content-item">
+            <div class="left-container footer-item-container">
+              <div class="logo-left">
+                <a href="index.html">
+                  <img src="./assets/logo-1.png" alt="dreamSoft" />
+                </a>
+              </div>
+              <p>
+                Our company has been developing high-quality and reliable
+                software for corporate needs since 2008. We are renowned
+                professionals of software development.
+              </p>
+
+              <div class="left-contact">
+                <div class="left-contact-item">
+                  <div class="contact-item">
+                    <div class="contact-item-left">
+                      <h6>Address</h6>
+                    </div>
+                    <div class="contact-item-left">
+                      <a href="#"
+                        >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="left-contact-item">
+                  <div class="contact-item">
+                    <div class="contact-item-left">
+                      <h6>Phones</h6>
+                    </div>
+                    <div class="contact-item-left">
+                      <a href="#">+1 323-913-4688, +1 323-888-4554</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-contact-item">
+                  <div class="contact-item">
+                    <div class="contact-item-left">
+                      <h6>EMAILS</h6>
+                    </div>
+                    <div class="contact-item-left">
+                      <a href="#">info@demolink.org, mail@demolink.org</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- mid-container -->
+          <div class="content-mid content-item">
+            <div class="mid-container footer-item-container">
+              <h3>Questions? Contact Us</h3>
+              <form class="mid-form">
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-name-6"
+                    type="text"
+                    name="name"
+                    data-constraints="@Required"
+                  /><span class="form-validation"></span>
+                  <label class="form-label" for="contact-name-6">Name</label>
+                </div>
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-email-6"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  /><span class="form-validation"></span>
+                  <label class="form-label" for="contact-email-6">E-mail</label>
+                </div>
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-message-6"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-input textarea"
+                    id="contact-message-6"
+                    name="message"
+                    data-constraints="@Required"
+                  ></textarea
+                  ><span class="form-validation"></span>
+                </div>
+                <div class="btn">
+                  <div class="hover"></div>
+                  <a href="#">Get in Touch</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- right-container -->
+          <div class="content-right content-item">
+            <div class="right-container footer-item-container">
+              <h3 class="font-weight-normal">What We Offer</h3>
+              <ul class="footer-list-category">
+                <li class="heading-4">
+                  <a href="#">DB Management<span></span></a>
+                </li>
+                <li class="heading-4">
+                  <a href="#">iOS/MacOS<span></span></a>
+                </li>
+                <li class="heading-4">
+                  <a href="#">Android Apps<span></span></a>
+                </li>
+                <li class="heading-4">
+                  <a href="#">Windows Apps<span></span></a>
+                </li>
+                <li class="heading-4">
+                  <a href="#">UX &amp; UI<span></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            <span class="logo">©</span>
+            <span class="copyright year">2023</span>
+            <span>c0dewithLokesh</span>
+            . All rights reserved.
+            <a href="https://github.com/c0dewithLokesh/">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js link -->
+    <script src="./script/gallery.js"></script>
+  </body>
+</html>
